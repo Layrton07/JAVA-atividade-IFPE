@@ -126,7 +126,10 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosImpares(int[] array) 
 	{
-		System.out.print("");
+		for(int num : array) {
+			if(num % 2 != 0)
+				System.out.println(array[num] + " ");
+		}
 	}
 	
 	
