@@ -73,7 +73,11 @@ public class RespostaListaExercicio {
 	 * @return media
 	 */
 	public static float calcularMediaNotas(float[] notas) {
-		return 0f;
+		float media = 0f;
+		for(float nota: notas) {
+			media += nota;
+		}
+		return media/notas.length;
 	}
 	
 	/**
