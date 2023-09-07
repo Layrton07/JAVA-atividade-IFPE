@@ -104,7 +104,17 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPrimos(int[] array) 
 	{
-		System.out.print("");
+		int count = 0;
+		for(int numPrim1 = 0; array.length>numPrim1;numPrim1++) {
+			for(int numPrim2 = 1;numPrim2 <= array[numPrim1];numPrim2++) {
+				if(array[numPrim1] % numPrim2 == 0) 
+					count++;
+			}
+			if(count == 2)
+					System.out.print(array[numPrim1] + " ");
+			count = 0;
+		}
+		
 	}
 	
 	
