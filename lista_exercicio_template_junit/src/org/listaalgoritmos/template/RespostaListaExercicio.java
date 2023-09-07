@@ -60,9 +60,10 @@ public class RespostaListaExercicio {
 	 * @param numero
 	 * @return condicao
 	 */
-	public static boolean verificarParImpar(int numero) 
+	public static boolean verificarParImpar(int numero)
 	{
-		return false;		
+		boolean condicao = (numero % 2 == 0);
+		return condicao;		
 	}
 	
 	/**
