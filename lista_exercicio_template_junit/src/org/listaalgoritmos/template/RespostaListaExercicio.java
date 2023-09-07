@@ -88,7 +88,12 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirArrayInverso(int[] array)
 	{
-		System.out.print("");
+		for(int reverse = array.length - 1; reverse >= 0; reverse-- ) {
+			System.out.print(array[reverse]);
+			if(reverse > 0)
+				System.out.print(",");
+		}
+		
 	}
 	
 	/**
