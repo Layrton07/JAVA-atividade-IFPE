@@ -49,7 +49,8 @@ public class RespostaListaExercicio {
 	 */
 	public static int maiorEntreDoisInteiros(int a, int b) 
 	{
-		return 0;
+		int maiorValor = (a > b ? a : b);
+		return maiorValor;
 	}
 	
 	/**
