@@ -128,7 +128,7 @@ public class RespostaListaExercicio {
 	{
 		for(int num : array) {
 			if(num % 2 != 0)
-				System.out.println(array[num] + " ");
+				System.out.print(num + " ");
 		}
 	}
 	
@@ -141,7 +141,10 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirElementosPares(int[] array) 
 	{
-		System.out.print("");
+		for(int num : array) {
+			if(num % 2 == 0)
+				System.out.print(num + " ");
+		}
 	}
 	
 	
