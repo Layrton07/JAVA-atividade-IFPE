@@ -175,7 +175,11 @@ public class RespostaListaExercicio {
 	 */
 	public static float calcularMediaAritmetica(int[] array) 
 	{
-		return 0f;
+		float media = 0f;
+		for(float num : array) {
+			media += num;
+		}
+		return media / array.length;
 	}
 	
 }
