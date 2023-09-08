@@ -156,7 +156,15 @@ public class RespostaListaExercicio {
 	 */
 	public static void imprimirMaiorMenorElemento(int[] array) 
 	{
-		System.out.print("");
+		int maior = array[0];
+		int menor = array[0];
+		for(int num : array) {
+			if(num > maior)
+				maior = num;
+			if(menor > num)
+				menor = num;
+		}
+		System.out.print(maior + " " + menor + " ");
 	}
 	
 	/**
